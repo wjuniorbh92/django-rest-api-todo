@@ -46,3 +46,4 @@ And pass you authenticate yourself, you need:
 | api/edit/ |Edit task with specific id| Yes | PATH|
 | api/login/ | Pass the username and password, and the token is returned | No | POST |
 | api/register/ |Register a user by passing username and password  | No | POST |
+
