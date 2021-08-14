@@ -1,6 +1,10 @@
 # django-rest-api-todo
 
-This is a Backend for a Todo Application using Django Rest Api and Token Auth
+This is a Backend for a Todo Application using Django Rest Api and Token Auth.
+
+A deploy was made of this backend in Heroku and you can access the routes through the link below.
+[backend-link](https://django-rest-api-todo.herokuapp.com/api/)
+  
 
 ## Prerequisites
 
@@ -47,3 +51,16 @@ And pass you authenticate yourself, you need:
 | api/login/ | Pass the username and password, and the token is returned | No | POST |
 | api/register/ |Register a user by passing username and password  | No | POST |
 
+
+# Deploy
+
+I created a brach called deploy heroku, to put all the settings, please do a gitclone in Brach Deploy, if you want to test the deploy on Heroku.
+
+## Why Heroku?
+Heroku, besides being free, Heroku has a cli tool, very similar to Google Cloud and Azure, the app is already scale-ready.
+
+## How to do deploy?
+
+Following the tutorial on the service page, it does not leave us with many doubts.
+[Heroku Tutorial Python](https://devcenter.heroku.com/articles/getting-started-with-python?singlepage=true)
+If you have Error in CollectStatic, just go to WebApp settings on the Heroku website. Under Config VARS, add a variable Disable_CollectStatic: 1.
