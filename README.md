@@ -10,19 +10,20 @@ This is a Backend for a Todo Application using Django Rest Api and Token Auth
 ## How to run
 To start the project it is ideal to have a virtualEnv, just run the command's in the terminal.
 ```
-	pip install virtualenv
-	python3 -m virtualenv venv
-	source venv/bin/activate  **(Linux or macOS)**  
-	venv/Scripts/Activate  
- ```
+pip install virtualenv
+python3 -m virtualenv venv
+source venv/bin/activate  **(Linux or macOS)**  
+venv/Scripts/Activate  
+```
 With the virtual env created and activated, just install the requirements, migrate the database and run the server
 
+```
+pip install -r requirements.txt
+python manage.py makemigration
+python manage.py migration
+python manage.py runserver
+``` 
 
-    pip install -r requirements.txt
-    python manage.py makemigration
-    python manage.py migration
-    python manage.py runserver
-    
 ## Authentication
 As per the tutorial in the token authentication documentation, to authenticate.
 
@@ -32,6 +33,7 @@ As per the tutorial in the token authentication documentation, to authenticate.
 And pass you authenticate yourself, you need:
 
 > The  `curl`  command line tool may be useful for testing token authenticated APIs. For example:
+>
 > `curl -X GET http://127.0.0.1:8000/api/example/ -H 'Authorization: Token 9944b09199c62bcf9418ad846dd0e4bbdfc6ee4b'`
 
 ### EndPoints
